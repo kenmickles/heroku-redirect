@@ -1,4 +1,4 @@
-Simple node app to redirect all requests from a Heroku app to a new URL. I've needed this more times than I should have.
+Simple node app to redirect all requests from a Heroku app to a new URL. This has come in handy more times than it should have.
 
 ## Configuration
 ```
