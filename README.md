@@ -1,4 +1,4 @@
-This has come in handy more times than it should have. 
+This has come in handy more times than it should have.
 
 ## Configuration
 
