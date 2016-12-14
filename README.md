@@ -1,4 +1,4 @@
-This has come in handy more times than it should have. 
+This has come in handy more times than it should have.
 
 ## Configuration
 
@@ -9,6 +9,8 @@ heroku config:add NEW_BASE_URL=http://example.com
 ```
 
 ## Deployment
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 If the old app that you're redirecting from isn't a Node app you'll need to change the [buildpack](https://devcenter.heroku.com/articles/buildpacks):
 
