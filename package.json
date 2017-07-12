@@ -1,11 +1,24 @@
 {
-  "name": "node-example",
-  "version": "0.0.1",
+  "name": "heroku-redirect",
+  "version": "1.0.0",
+  "description": "Super simple Node app that redirects all requests for an old Heroku app to a new URL",
+  "main": "web.js",
   "dependencies": {
-    "express": "2.5.x"
+    "express": "^4.15.3"
   },
-  "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node web.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenmickles/heroku-redirect.git"
+  },
+  "author": "Ken Mickles <ken@37i.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenmickles/heroku-redirect/issues"
+  },
+  "homepage": "https://github.com/kenmickles/heroku-redirect#readme"
 }
