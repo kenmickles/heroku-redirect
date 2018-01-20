@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-var newBaseURL = process.env.NEW_BASE_URL || 'http://example.com';
+var newBaseURL = process.env.NEW_BASE_URL || 'https://www.tinypulse.com';
 var port = process.env.PORT || 5000;
 
 app.get('*', function(request, response) {

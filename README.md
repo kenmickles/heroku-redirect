@@ -1,27 +1,27 @@
-This has come in handy more times than it should have.
+Redirect all requests to a NEW_BASE_URL, default to https://www.tinypulse.com
 
-## Configuration
+## Set up
 
-To redirect all requests to example.com:
+- Go to the Heroku app's Settings => Domains and certificates section and "Add domain"
+- Set up the domain to point to Heroku's DNS Target provided above
+- Unlikely you need to modify the code, but if you need to, see below.
 
-```
-heroku config:add NEW_BASE_URL=http://example.com
-```
+## Development
 
-## Deployment
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-If the old app that you're redirecting from isn't a Node app you'll need to change the [buildpack](https://devcenter.heroku.com/articles/buildpacks):
+Installation
 
 ```
-heroku buildpacks:set heroku/nodejs
+npm install
 ```
 
-You can then replace the app by pushing with `-f`:
+Run
 
 ```
-git push heroku master -f
+NEW_BASE_URL=https://is.gd node web.js
 ```
 
-**NOTE:** If the above doesn't work you may need to delete and re-create your Heroku app before pushing an entirely new Git repository into it.
+## Heroku Configuration
+
+```
+heroku config:add NEW_BASE_URL=https://www.tinypulse.com
+```
