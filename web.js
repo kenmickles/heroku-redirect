@@ -5,7 +5,7 @@ var newBaseURL = process.env.NEW_BASE_URL || 'http://example.com';
 var port = process.env.PORT || 5000;
 
 app.get('*', function(request, response) {
-  response.redirect(newBaseURL + request.url);
+  response.redirect(301,newBaseURL + request.url);
 });
 
 app.listen(port, function() {
