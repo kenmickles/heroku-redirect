@@ -5,6 +5,10 @@
     "NEW_BASE_URL": {
       "description": "Redirect all requests to this URL.",
       "value": "http://example.com"
+    },
+    "REDIRECT_STATUS": {
+      "description": "Redirect with this HTTP status code.",
+      "value": "302"
     }
   }
 }
