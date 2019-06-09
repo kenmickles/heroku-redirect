@@ -12,8 +12,10 @@ app.get('*', function(request, response) {
   if ( request.url ) {
     if ( request.url.includes('/web4')  ) {
       response.redirect(redirectStatus, newWeb4URL);  
-    } else {
+    } else if ( request.url.includes('/web0')  ) {
       response.redirect(redirectStatus, newWeb0URL);  
+    } else {
+      response.redirect(redirectStatus, newDefaultURL);  
     }
   } else {
     response.redirect(redirectStatus, newDefaultURL);
