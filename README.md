@@ -5,7 +5,7 @@ This has come in handy more times than it should have.
 To redirect all requests to example.com:
 
 ```
-heroku config:add NEW_BASE_URL=http://example.com
+heroku config:add BACKEND_URL=http://example.com
 ```
 
 To use an alternative HTTP status code set `REDIRECT_STATUS`. Defaults to 302.

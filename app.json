@@ -2,7 +2,7 @@
   "name": "Heroku Redirect",
   "repository": "https://github.com/kenmickles/heroku-redirect",
   "env": {
-    "NEW_BASE_URL": {
+    "BACKEND_URL": {
       "description": "Redirect all requests to this URL.",
       "value": "http://example.com"
     },
